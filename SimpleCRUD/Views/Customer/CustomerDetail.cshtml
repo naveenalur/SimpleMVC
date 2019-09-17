@@ -1,0 +1,47 @@
+﻿
+@model IEnumerable<SimpleCRUD.Models.Customer>
+
+@{
+    ViewBag.Title = "CustomerDetail";
+}
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
+<h2>Customer Detail &nbsp; &nbsp; <a class="btn btn-success" href="@Url.Action("AddNewCustomer","Customer")"><i class="fa fa-plus"></i>  &nbsp;  Add</a></h2> 
+
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Phone Number</th>
+        <th>Actions</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Gender</td>
+            <td>@item.PhoneNumber</td>
+            <td> <a class="btn btn-success"><i class="fa fa-edit"></i></a></td>
+        </tr>
+    }
+
+</table>
