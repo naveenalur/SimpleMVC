@@ -7,7 +7,8 @@ namespace SimpleCRUD.Dto
 {
     public class AddedCustomerGraph
     {
-        public int NumberOfCustomers { get; set; }
-        public DateTime WhichDateTime { get; set; }
+        public int Id { get; set; }
+        public string Key { get; set; }
+        public string Value { get; set; }
     }
 }

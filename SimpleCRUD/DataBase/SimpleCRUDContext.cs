@@ -1,5 +1,6 @@
 ﻿using SimpleCRUD.Models;
 using System.Data.Entity;
+using SimpleCRUD.Dto;
 
 namespace SimpleCRUD.DataBase
 {
@@ -13,5 +14,6 @@ namespace SimpleCRUD.DataBase
         }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Address> Addresses { get; set; }
+        public DbSet<AddedCustomerGraph> AddedCustomerGraphs { get; set; }
     }
 }

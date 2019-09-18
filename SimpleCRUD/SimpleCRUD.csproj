@@ -134,6 +134,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="InfraStructure\IQS\IMediator.cs" />
+    <Compile Include="InfraStructure\IQS\Mediator.cs" />
     <Compile Include="Migrations\201909161014479_InitialCustomer.cs" />
     <Compile Include="Migrations\201909161014479_InitialCustomer.Designer.cs">
       <DependentUpon>201909161014479_InitialCustomer.cs</DependentUpon>
@@ -141,6 +143,10 @@
     <Compile Include="Migrations\201909171125385_addcreatedDate.cs" />
     <Compile Include="Migrations\201909171125385_addcreatedDate.Designer.cs">
       <DependentUpon>201909171125385_addcreatedDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909180952068_AddedKeyValue.cs" />
+    <Compile Include="Migrations\201909180952068_AddedKeyValue.Designer.cs">
+      <DependentUpon>201909180952068_AddedKeyValue.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -217,6 +223,15 @@
     <EmbeddedResource Include="Migrations\201909171125385_addcreatedDate.resx">
       <DependentUpon>201909171125385_addcreatedDate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909180952068_AddedKeyValue.resx">
+      <DependentUpon>201909180952068_AddedKeyValue.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Buiness\Buiness.csproj">
+      <Project>{e279c0fb-5b2e-44a6-81b9-0a18e03bda14}</Project>
+      <Name>Buiness</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
